@@ -15,11 +15,14 @@ $json_array = json_decode($json_file, true);
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav>
-    <ul>
-        <li><a href="list.php">Список тестов</a></li>
-    </ul>
-</nav>
+
+<h1>Выполните тест</h1>
+
+<form name="test" method="post" action="certificate.php">
+    <p><b>Ваше имя:</b><br>
+        <input type="text" size="40">
+    </p>
+</form>
 
 <form action="result.php" method="POST" enctype="multipart/form-data">
 <div>
